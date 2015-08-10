@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="dialog_anim_style_v13" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/my_scale_action</item>
+        <item name="android:windowExitAnimation">@anim/my_scale_eitxi</item>
+    </style>
+
+</resources>

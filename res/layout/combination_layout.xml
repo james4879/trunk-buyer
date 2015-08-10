@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/title_bg" >
+
+        <ImageView
+            android:id="@+id/combination_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="搭配"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/post"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/post_item_bg" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/addview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ly"
+        android:background="#FFFFFF" >
+    </FrameLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/three_scoview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:scrollbars="none"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/three_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hidden_bg"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <com.datapush.buyhand.view.HorizontalListView
+        android:id="@+id/hostview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/hidden_bg" />
+
+    <LinearLayout
+        android:id="@+id/ly"
+        android:layout_width="fill_parent"
+        android:layout_height="37dp"
+        android:layout_below="@+id/rl"
+        android:background="@drawable/pt_top_big_bg"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:background="@drawable/tp_top_selection"
+            android:text="类目"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/tp_line_bg" />
+
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:background="@drawable/tp_top_selection"
+            android:text="季节"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/tp_line_bg" />
+
+        <Button
+            android:id="@+id/bt3"
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:background="@drawable/tp_top_selection"
+            android:text="风格"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/tp_line_bg" />
+
+        <Button
+            android:id="@+id/bt4"
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:background="@drawable/tp_top_selection"
+            android:text="收藏"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/side_list"
+        android:layout_width="100dp"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="87dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+</RelativeLayout>

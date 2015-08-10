@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <com.datapush.buyhand.view.ScrollLayout
+        android:id="@+id/main_scrolllayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <include layout="@layout/buyhand_layout" />
+
+        <include layout="@layout/selection_layout" />
+
+        <include layout="@layout/collocation_layout" />
+        
+        <include layout="@layout/settings_layout" />
+
+    </com.datapush.buyhand.view.ScrollLayout>
+
+    <include layout="@layout/main_footer" />
+
+</LinearLayout>

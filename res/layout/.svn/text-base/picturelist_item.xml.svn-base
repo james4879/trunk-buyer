@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/pohoto_bg" />
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/huisetiao_bg" >
+
+        <TextView
+             android:textSize="12sp"
+            android:id="@+id/zan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@drawable/zan_bg_n"
+            android:drawablePadding="4dp"
+            android:text="赞  150"
+            android:textColor="#8e8e8e" />
+
+        <TextView
+            android:textSize="12sp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/cai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/cai_bg_n"
+            android:drawablePadding="4dp"
+            android:text="踩  150"
+            android:textColor="#8e8e8e" />
+    </RelativeLayout>
+
+</LinearLayout>

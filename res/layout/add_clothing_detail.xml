@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/title_bg">
+        <TextView android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="取消"/>
+        <Button android:id="@+id/save"
+            android:layout_width="52dp"
+            android:layout_height="32dp"
+            android:background="@drawable/clothing_save_bg"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="保存"
+            android:textColor="#000000"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+    <LinearLayout android:id="@+id/ll_section"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView android:id="@+id/season"
+            android:layout_width="72dp"
+            android:layout_height="29dp"
+            android:text="季节"
+            android:gravity="center"/>
+        <ImageView android:id="@+id/iv1"
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:src="@drawable/add_vertical"
+            android:layout_gravity="center_vertical"/>
+        <TextView android:id="@+id/style"
+            android:layout_width="72dp"
+            android:layout_height="29dp"
+            android:text="风格"
+            android:gravity="center"/>
+        <ImageView android:id="@+id/iv1"
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:src="@drawable/add_vertical"
+            android:layout_gravity="center_vertical"/>
+        <TextView android:id="@+id/brand"
+            android:layout_width="72dp"
+            android:layout_height="29dp"
+            android:text="品牌"
+            android:gravity="center"/>
+        <ImageView android:id="@+id/iv1"
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:src="@drawable/add_vertical"
+            android:layout_gravity="center_vertical"/>
+        <TextView android:id="@+id/price"
+            android:layout_width="72dp"
+            android:layout_height="29dp"
+            android:text="价格"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/ll_section_choice"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <Spinner
+            style="@style/spinner_style"
+            android:id="@+id/sp_season"
+            android:layout_width="65dp"
+            android:layout_height="29dp"/>
+        <Spinner
+            style="@style/spinner_style"
+            android:id="@+id/sp_style"
+            android:layout_width="65dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="7dp"/>
+        <Spinner
+            style="@style/spinner_style"
+            android:id="@+id/sp_brand"
+            android:layout_width="65dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="7dp"/>
+        <Spinner
+            style="@style/spinner_style"
+            android:id="@+id/sp_price"
+            android:layout_width="65dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="7dp"/>
+    </LinearLayout>
+</LinearLayout>

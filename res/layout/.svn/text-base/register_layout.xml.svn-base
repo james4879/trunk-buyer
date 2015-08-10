@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#eaeaea"
+    >
+    
+    <TextView android:id="@+id/register_top"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/register_top_bg"
+        android:text="注册"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:textColor="#ffffff"
+        android:textSize="26dp"/>
+    <LinearLayout android:layout_width="304dp"
+        android:layout_height="47dp"
+        android:id="@+id/phone_msg"
+        android:layout_below="@id/register_top"
+        android:orientation="horizontal"
+        android:background="@drawable/bottom_bg"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/phone_icon"
+            android:layout_width="19dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="35dp"
+            android:src="@drawable/phone_icon"
+            />
+        <ImageView android:id="@+id/phone_num"
+            android:layout_width="55dp"
+            android:layout_height="18dp"
+            android:src="@drawable/phone_num"
+            android:layout_marginLeft="20dp"/>
+        <EditText android:id="@+id/phone_code"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="35dp"
+            android:textSize="20dp"
+            android:inputType="number"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="304dp"
+        android:layout_height="47dp"
+        android:id="@+id/user_name"
+        android:layout_below="@id/phone_msg"
+        android:orientation="horizontal"
+        android:background="@drawable/bottom_bg"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/user_name_icon"
+            android:layout_width="20dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="35dp"
+            android:src="@drawable/user_name_icon"
+            />
+        <ImageView android:id="@+id/user_name_pic"
+            android:layout_width="35dp"
+            android:layout_height="17dp"
+            android:src="@drawable/user_name_pic"
+            android:layout_marginLeft="20dp"/>
+        <EditText android:id="@+id/user_name_ed"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="35dp"
+            android:textSize="20dp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="304dp"
+        android:layout_height="47dp"
+        android:id="@+id/resgister_password_msg"
+        android:layout_below="@id/user_name"
+        android:orientation="horizontal"
+        android:background="@drawable/bottom_bg"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/register_password_icon"
+            android:layout_width="26dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="35dp"
+            android:src="@drawable/password_icon"
+            />
+        <ImageView android:id="@+id/register_password"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:src="@drawable/register_password"
+            android:layout_marginLeft="10dp"/>
+        <EditText android:id="@+id/password_code"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="35dp"
+            android:textSize="20dp"
+            android:password="true"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="304dp"
+        android:layout_height="47dp"
+        android:id="@+id/resgister_password_verify"
+        android:layout_below="@id/resgister_password_msg"
+        android:orientation="horizontal"
+        android:background="@drawable/bottom_bg"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/register_password_icon_verify"
+            android:layout_width="26dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="35dp"
+            android:src="@drawable/password_icon"
+            />
+        <ImageView android:id="@+id/register_verify_password"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:src="@drawable/verify_password"
+            android:layout_marginLeft="10dp"/>
+        <EditText android:id="@+id/verify_password_code"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="35dp"
+            android:textSize="20dp"
+            android:password="true"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/auth_code_msg"
+        android:layout_width="338dp"
+        android:layout_height="52dp"
+        android:layout_below="@id/resgister_password_verify"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true">
+        <EditText android:id="@+id/auth_code"
+            android:layout_width="152dp"
+            android:layout_height="44dp"
+            android:background="@drawable/auth_code_bg"
+            android:hint="请输入验证码"
+            android:textSize="18dp"
+            android:inputType="number"
+            android:textColor="#b4b4b4"
+            />
+        <RelativeLayout android:id="@+id/rl_get_auth_code"
+            android:layout_width="137dp"
+            android:layout_height="45dp"
+            android:background="@drawable/get_code_bg"
+            android:layout_marginLeft="5dp"
+            android:onClick="clickMe">
+            <ImageView android:id="@+id/get_code"
+               android:layout_width="42dp"
+               android:layout_height="20dp"
+               android:layout_centerInParent="true"
+               android:visibility="visible"
+               android:src="@drawable/get_auth_code"
+            />
+            <TextView android:id="@+id/clock_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="20sp"
+                android:visibility="gone"/>
+            <TextView android:id="@+id/tv_auth_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/operate"
+        android:layout_width="338dp"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/auth_code_msg"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true">
+        <RelativeLayout android:id="@+id/commit_msg"
+            android:layout_width="151dp"
+            android:layout_height="45dp"
+            android:background="@drawable/register_commit_bg"
+            android:onClick="clickMe">
+            <ImageView android:id="@+id/register_commit"
+                android:layout_width="42dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/register_commit"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/register_back_msg"
+            android:layout_width="137dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/register_back_bg">
+            <ImageView android:id="@+id/register_back"
+                android:layout_width="42dp"
+                android:layout_height="20dp"
+                android:src="@drawable/register_back"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

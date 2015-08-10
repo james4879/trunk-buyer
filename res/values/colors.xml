@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <color name="transparent">#00000000</color>
+    <color name="button_a">#FF82AB</color>
+    <color name="button_b">#FF0000</color>
+    <color name="white">#FFFFFF</color>
+        <color name="fense">#CD3700</color>
+    <color name="bright_foreground_light">#ff000000</color>
+    <color name="bright_foreground_light_inverse">#ffffffff</color>
+    <color name="bright_foreground_light_disabled">#80000000</color>
+    <color name="frame_button_text_nor">#033a5c</color>
+    <color name="frame_button_text_select">#FFFFFF</color>
+    <color name="title_bar_bg">#01B0F1</color>
+    <color name="item_cd">#CDC9C9</color>
+    <color name="item_of"> #EAEAEA</color>
+    <color name="clothing_category">#ffffff</color>
+    
+      <color name="common_bg">#efefef</color>
+    <color name="news_title">#333333</color>
+    <color name="setting">#385487</color>
+    <color name="bound">#7a7a7a</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="sbc_header_text">#ff808080</color>
+    <color name="sbc_header_view">#ffffffff</color>
+    <color name="sbc_list_item">#fffff0e0</color>
+    <color name="sbc_layout_view">#ffffffff</color>
+    <color name="share_text">#ff000000</color>
+    <color name="share_view">#ffffffff</color>
+    <color name="status_view">#50000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="half_transparent">#c0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <!-- Add -->
+    <color name="navi_bg">#f1efeb</color>
+    <color name="module_bg">#e6e4e1</color>
+    <color name="module_bg_h">#d9d6d2</color>
+    <color name="common_text">#4c5b83</color>
+    <color name="common_text_h">#f45100</color>
+    <color name="main_bg">#ececec</color>
+    <color name="title_text">#000000</color>
+    <color name="content_text">#707070</color>
+    <color name="read_text">#b6b8bd</color>
+    <color name="findpswtext">#4a4a4a</color>
+    <color name="tanqi">#dfdfde</color>
+
+</resources>
